@@ -5,6 +5,7 @@
 
 At web3-blog-on-docker directory, execute
 ```
+cp .env.example .env.local
 docker compose up
 ```
 And then access to localhost:8080 with your browser.
