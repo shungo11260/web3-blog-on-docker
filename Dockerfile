@@ -5,5 +5,4 @@ RUN apt update && \
   apt install -y nodejs git && \
   npm install -g npm@8.5.3
 
-ENV HOME=/home/web3-blog
-WORKDIR $HOME
+WORKDIR /home/web3-blog
