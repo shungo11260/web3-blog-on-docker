@@ -5,7 +5,7 @@
 
 At web3-blog-on-docker directory, execute
 ```
-docker compose up -d
+docker compose up
 ```
 And then access to localhost:8080 with your browser.
 
