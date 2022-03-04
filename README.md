@@ -1,15 +1,35 @@
-# Basic Sample Hardhat Project
+# Requirements
+- docker
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+# How to start application
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+At web3-blog-on-docker directory, execute
 ```
+docker compose up -d
+```
+
+Access to the container you just started with
+```
+docker exec -it CONTAINER_ID bash
+```
+
+You can see the docker container ID with the command below.
+```
+docker ps
+```
+
+
+In the container, execute
+```
+npm install
+npx hardhat node
+```
+to install libraries and start the node network.
+
+With other terminal, execute
+```
+npx hardhat run scripts/deploy.js --network localhost
+npm run dev
+```
+
+And then access to localhost:8080 with your browser.
