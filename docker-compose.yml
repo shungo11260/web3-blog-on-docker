@@ -5,3 +5,5 @@ services:
     volumes:
       - ./:/home/web3-blog
     tty: true
+    ports:
+      - "127.0.0.1:8080:80"
