@@ -5,4 +5,4 @@ RUN apt update && \
   apt install -y nodejs git
 
 ENV HOME=/home/
-WORKDIR $HOME
+WORKDIR $HOME/web3-blog
