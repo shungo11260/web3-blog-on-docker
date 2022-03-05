@@ -6,7 +6,8 @@ services:
       - ./:/home/web3-blog
     tty: true
     ports:
-      - "127.0.0.1:8080:80"
+      - "127.0.0.1:8080:3000"
+      - "127.0.0.1:8545:8545"
     command:
       bash -c '
         (test -d "/home/web3-blog/node_modules/" || npm install) &&
